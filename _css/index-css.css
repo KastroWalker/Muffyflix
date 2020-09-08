@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@font-face{
+    src: url(../_fonts/Bebas-Regular.ttf);
+    font-family: "Netflix";
+}
+
+body{
+    background-color: aqua;
+}
+
+div#anuncio p{
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 3.125rem;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50pt;
+    font-family: "Netflix", serif;
+    color: #ffffff;
+    text-decoration: underline;
+    
+     
+     
+}
+div#anuncio2 p{
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 3.125rem;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    font-size: 50pt;
+    font-family: "Netflix", serif;
+    color: #ffffff;
+    margin-top: 7.5rem;
+    text-decoration: underline;
+    margin-left: 10px;
+
+}
