@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: black;
 }
 
 div#anuncio p{
@@ -24,14 +24,14 @@ div#anuncio p{
      
      
 }
-div#anuncio2 p{
+div#preco p{
     font-family: sans-serif;
     text-align: justify;
     text-indent: 3.125rem;
    position: absolute;
-    top: 50%;
-    left: 50%;
-    
+    top: 44%;
+    left: 30%;
+    margin-left: 50px;
     font-size: 50pt;
     font-family: "Netflix", serif;
     color: #ffffff;
@@ -39,4 +39,87 @@ div#anuncio2 p{
     text-decoration: underline;
     margin-left: 10px;
 
+}
+
+div#anuncio2  h3{
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 3.125rem;
+   position: absolute;
+    top: 58%;
+    left: 38%;
+    margin-left: 50px;
+    font-size: 20pt;
+    font-family: "Netflix", serif;
+    color: #ffffff;
+    margin-top: 7.5rem;
+    text-decoration: underline;
+    margin-left: 10px;
+
+}
+
+div#assinante h3{
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 3.125rem;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    margin-left: 50px;
+    font-size: 20pt;
+    font-family: "Netflix", serif;
+    color: #ffffff;
+    margin-top: 7.5rem;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+nav#login h1#acesso{
+    font-family: sans-serif;
+    position: absolute;
+    right: 1%;
+    margin-top: -3%;
+    color: #ffffff;
+    font-size: 18pt;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav#login h1#acesso:hover{
+    text-decoration: underline;
+    opacity: 10;
+    transition: opacity 1s;
+    
+}
+div#nassinante h4{
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 3.125rem;
+    position: absolute;
+    top: 83%;
+    left: 35%;
+    margin-left: 50px;
+    font-size: 20pt;
+    font-family: "Netflix", serif;
+    color: #ffffff;
+    margin-top: 7.5rem;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+form{
+    
+    width: 700px;
+    margin-top:39%;
+    margin-left: 32%;
+    
+}
+fieldset#assinar{
+    background-color:black;
+    margin-left: 100px;
+    margin-top: 100px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius:5px ;
 }

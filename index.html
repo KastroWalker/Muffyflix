@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <header>
-<head>
-  <a href="index.html"><img src="_imagens/logo.jpg"> </a>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/reset.css"/>
-    <link rel="stylesheet" href="_css/index-css.css"/>
-    </header>
-       
-    <title>Muffy Flix</title>
+<header>
+
+    <head>
+        <a href="index.html"><img src="_imagens/logo.jpg"> </a>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="_css/reset.css" />
+        <link rel="stylesheet" href="_css/index-css.css" />
+        
+</header>
+
+<title>Muffy Flix</title>
 </head>
+
 <body>
+    <nav id="login">
+        <ul type="disc">
+            <li>
+                <h1 id="acesso"> <a>Entrar</a></h1>
+            </li>
+        </ul>
+
+    </nav>
     <div id="anuncio">
 
-        <p>  100% Diversão.</p>
-        
+        <p> 100% Diversão.</p>
+
+    </div>
+    <div id="preco">
+        <p>R$1,90 nos primeiros 30 Dias. </p>
     </div>
     <div id="anuncio2">
-         <p>R$1,90 nos primeiros 30 Dias. </p>
+        <p>
+        <h3>Assista onde quiser. Cancele quando quiser.</h3>
+        </p>
     </div>
-    
+    <div id="assinante">
+        <p>
+        <h3> Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+        </p>
+
+        <div id="nassinante">
+            <p>
+           <h4>Esta oferta está disponível somente para não assinantes. </h4>
+            </p>
+        </div>
+    </div>
+    <form method="POST" id="email" >
+        <fieldset id="assinar">
+        <p><label for="cEmail"></label> Email: <input type="email" name="tMail" id="cEmail" size="80" maxlength="40" placeholder="Insira seu e-mail para Assinar."></p>
+    </fieldset>
+
+    </form>
 </body>
+
 </html>
