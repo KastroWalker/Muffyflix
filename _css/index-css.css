@@ -1,125 +1,122 @@
 @charset "UTF-8";
-@font-face{
-    src: url(../_fonts/Bebas-Regular.ttf);
-    font-family: "Netflix";
+@font-face {
+  src: url(../_fonts/Bebas-Regular.ttf);
+  font-family: "Netflix";
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-div#anuncio p{
-    font-family: sans-serif;
-    text-align: justify;
-    text-indent: 3.125rem;
-   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50pt;
-    font-family: "Netflix", serif;
+.anuncio {
+  /* Flex é o jeito novo de posicionar as coisas no CSS, muito mais fácil!!! :D */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: sans-serif;
+  text-align: justify;
+  text-indent: 3.125rem;
+  font-size: 50pt;
+
+  font-family: "Netflix", serif;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Vai afetar só as classes preco que estiverem dentro de classes anuncio */
+.anuncio .preco {
+  margin-top: 7.5rem;
+}
+
+/* Tipo, agora é ir ajustando o tamanho das fontes que você quer */
+/* E o tamanho da margin/espaçamento que você quer pra cima no margin-top */
+.anuncio h3 {
+  font-size: 20pt;
+  margin-top: 20rem;
+}
+
+.anuncio h4 {
+  font-size: 16pt;
+  margin-top: 7.5rem;
+}
+
+nav#login h1#acesso {
+  font-family: sans-serif;
+  position: absolute;
+  right: 1%;
+  margin-top: -3%;
+  color: #ffffff;
+  font-size: 18pt;
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav#login h1#acesso:hover {
+  text-decoration: underline;
+  opacity: 10;
+  transition: opacity 1s;
+}
+div#nassinante h4 {
+  font-family: sans-serif;
+  text-align: justify;
+  text-indent: 3.125rem;
+  position: absolute;
+  top: 110%;
+  left: 35%;
+  margin-left: 50px;
+  font-size: 20pt;
+  font-family: "Netflix", serif;
+  color: #ffffff;
+  margin-top: 7.5rem;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+form#Temail {
+  width: 300px;
+  height: 100px;
+  margin-top: 45%;
+  margin-left: 32%;
+}
+fieldset#assinar {
+  background-color: black;
+  margin-left: 100px;
+  margin-top: 100px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.email-lb {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 60%;
+}
+
+.aproveite {
+  border: 5px solid #606060;
+  border-left: none;
+  border-right: none;
+  background-color: pink;
+  padding: 50px;
+}
+
+.aproveite h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+.aproveite h3{
     color: #ffffff;
-    text-decoration: underline;
-    
-     
-     
-}
-div#preco p{
-    font-family: sans-serif;
-    text-align: justify;
-    text-indent: 3.125rem;
-   position: absolute;
-    top: 44%;
-    left: 30%;
-    margin-left: 50px;
-    font-size: 50pt;
-    font-family: "Netflix", serif;
-    color: #ffffff;
-    margin-top: 7.5rem;
-    text-decoration: underline;
-    margin-left: 10px;
-
-}
-
-div#anuncio2  h3{
-    font-family: sans-serif;
-    text-align: justify;
-    text-indent: 3.125rem;
-   position: absolute;
-    top: 58%;
-    left: 38%;
-    margin-left: 50px;
-    font-size: 20pt;
-    font-family: "Netflix", serif;
-    color: #ffffff;
-    margin-top: 7.5rem;
-    text-decoration: underline;
-    margin-left: 10px;
-
-}
-
-div#assinante h3{
-    font-family: sans-serif;
-    text-align: justify;
-    text-indent: 3.125rem;
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    margin-left: 50px;
-    font-size: 20pt;
-    font-family: "Netflix", serif;
-    color: #ffffff;
-    margin-top: 7.5rem;
-    text-decoration: underline;
-    margin-left: 10px;
-}
-nav#login h1#acesso{
-    font-family: sans-serif;
-    position: absolute;
-    right: 1%;
-    margin-top: -3%;
-    color: #ffffff;
-    font-size: 18pt;
-    background-color: red;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-nav#login h1#acesso:hover{
-    text-decoration: underline;
-    opacity: 10;
-    transition: opacity 1s;
-    
-}
-div#nassinante h4{
-    font-family: sans-serif;
-    text-align: justify;
-    text-indent: 3.125rem;
-    position: absolute;
-    top: 83%;
-    left: 35%;
-    margin-left: 50px;
-    font-size: 20pt;
-    font-family: "Netflix", serif;
-    color: #ffffff;
-    margin-top: 7.5rem;
-    text-decoration: underline;
-    margin-left: 10px;
-}
-
-form{
-    
-    width: 700px;
-    margin-top:39%;
-    margin-left: 32%;
-    
-}
-fieldset#assinar{
-    background-color:black;
-    margin-left: 100px;
-    margin-top: 100px;
-    color: #ffffff;
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius:5px ;
+    font-size: 12pt;
 }

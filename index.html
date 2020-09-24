@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="_css/reset.css" />
         <link rel="stylesheet" href="_css/index-css.css" />
-        
+
 </header>
 
 <title>Muffy Flix</title>
@@ -23,33 +23,29 @@
         </ul>
 
     </nav>
-    <div id="anuncio">
-
+    <!-- tipo vamo faze a essa div anuncio ser o container -->
+    <!-- é bad usar id pra style, vamo usar classe!!! -->
+    <div class="anuncio">
         <p> 100% Diversão.</p>
-
-    </div>
-    <div id="preco">
-        <p>R$1,90 nos primeiros 30 Dias. </p>
-    </div>
-    <div id="anuncio2">
-        <p>
+        <p class="preco">R$1,30 nos primeiros 30 Dias. </p>
         <h3>Assista onde quiser. Cancele quando quiser.</h3>
-        </p>
+        <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+        <h4>Esta oferta está disponível somente para não assinantes. </h4>
     </div>
-    <div id="assinante">
-        <p>
-        <h3> Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-        </p>
 
-        <div id="nassinante">
-            <p>
-           <h4>Esta oferta está disponível somente para não assinantes. </h4>
-            </p>
-        </div>
-    </div>
-    <form method="POST" id="email" >
+    <section class="aproveite">
+        <h2>Aproveita</h2>
+        <h3>Assista em Smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV, <br>  aparelhos de Blu-ray e outros aparelhos.</h3>
+    </section>   
+
+
+    <form id="Temail"  method="POST" id="email" >
         <fieldset id="assinar">
-        <p><label for="cEmail"></label> Email: <input type="email" name="tMail" id="cEmail" size="80" maxlength="40" placeholder="Insira seu e-mail para Assinar."></p>
+
+            <label class="email-lb" for="cEmail">  Email:</label>
+        <input  type="email" name="tMail" id="cEmail"  maxlength="40" placeholder="Insira seu e-mail para Assinar.">
+
+
     </fieldset>
 
     </form>
