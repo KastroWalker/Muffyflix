@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
     <nav id="login">
         <ul type="disc">
             <li>
@@ -35,20 +36,26 @@
 
     <section class="aproveite">
         <h2>Aproveita</h2>
-        <h3>Assista em Smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV, <br>  aparelhos de Blu-ray e outros aparelhos.</h3>
-    </section>   
+        <h3>Assista em Smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV, <br> aparelhos de Blu-ray e outros
+            aparelhos.</h3>
+    </section>
 
 
-    <form id="Temail"  method="POST" id="email" >
+    <form action="/send" method="GET" target="_blank" enctype="multipart/form-data" id="Temail">
+        <!--Aqui entra o banco com esses parametros padroes de target and enctype-->
         <fieldset id="assinar">
 
-            <label class="email-lb" for="cEmail">  Email:</label>
-        <input  type="email" name="tMail" id="cEmail"  maxlength="40" placeholder="Insira seu e-mail para Assinar.">
+            <label class="email-lb" for="cEmail"> Email:</label>
+            <input type="email" name="tMail" class=" cEmail" maxlength="40"
+                placeholder="Insira seu e-mail para Assinar.">
+                <input type="submit" name="bEnviar" class="bTenviar" value="Assinar">
 
 
-    </fieldset>
+        </fieldset>
 
     </form>
+    
 </body>
+
 
 </html>
