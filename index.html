@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="_css/reset.css" />
+    <link rel="stylesheet" href="_css/index-css.css" />
+    <title>Muffy Flix</title>
+  </head>
 
-    <head>
-        <a href="index.html"><img src="_imagens/logo.jpg"> </a>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="_css/reset.css" />
-        <link rel="stylesheet" href="_css/index-css.css" />
-
-</header>
-
-<title>Muffy Flix</title>
-</head>
-
-<body>
-    
+  <body>
+    <header>
+      <a href="index.html"><img src="_imagens/logo.jpg" /> </a>
+    </header>
     <nav id="login">
-        <ul type="disc">
-            <li>
-                <h1 id="acesso"> <a>Entrar</a></h1>
-            </li>
-        </ul>
-
+      <ul type="disc">
+        <li>
+          <h1 id="acesso"><a>Entrar</a></h1>
+        </li>
+      </ul>
     </nav>
     <!-- tipo vamo faze a essa div anuncio ser o container -->
     <!-- é bad usar id pra style, vamo usar classe!!! -->
     <div class="anuncio">
-        <p> 100% Diversão.</p>
-        <p class="preco">R$1,30 nos primeiros 30 Dias. </p>
-        <h3>Assista onde quiser. Cancele quando quiser.</h3>
-        <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-        <h4>Esta oferta está disponível somente para não assinantes. </h4>
+      <p class="anuncio__texto">100% Diversão.</p>
+      <p class="preco">R$1,30 nos primeiros 30 Dias.</p>
+      <h3 class="anuncio__subtitle">
+        Assista onde quiser. Cancele quando quiser.
+      </h3>
+      <h3 class="anuncio__subtitle">
+        Pronto para assistir? Informe seu email para criar ou reiniciar sua
+        assinatura.
+      </h3>
+      <h4 >Esta oferta está disponível somente para não assinantes.</h4>
     </div>
 
     <section class="aproveite">
-        <h2>Aproveita</h2>
-        <h3>Assista em Smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV, <br> aparelhos de Blu-ray e outros
-            aparelhos.</h3>
+      <h2 class="aproveite__titulo">Aproveita</h2>
+      <h3 class="aproveite__subtitulo">
+        Assista em Smart TVs, PlayStation, <br />
+        Xbox, Chromecast, Apple TV, <br />
+        aparelhos de Blu-ray e outros aparelhos.
+      </h3>
     </section>
 
-
-    <form action="/send" method="GET" target="_blank" enctype="multipart/form-data" id="Temail">
-        <!--Aqui entra o banco com esses parametros padroes de target and enctype-->
-        <fieldset id="assinar">
-
-            <label class="email-lb" for="cEmail"> Email:</label>
-            <input type="email" name="tMail" class=" cEmail" maxlength="40"
-                placeholder="Insira seu e-mail para Assinar.">
-                <input type="submit" name="bEnviar" class="bTenviar" value="Assinar">
-
-
-        </fieldset>
-
+    <form
+      action="/send"
+      method="GET"
+      target="_blank"
+      enctype="multipart/form-data"
+      id="Temail"
+    >
+      <!--Aqui entra o banco com esses parametros padroes de target and enctype-->
+      <fieldset id="assinar">
+        <label class="email-lb" for="cEmail"> Email:</label>
+        <input
+          type="email"
+          name="tMail"
+          class="cEmail"
+          maxlength="40"
+          placeholder="Insira seu e-mail para Assinar."
+        />
+        <input type="submit" name="bEnviar" class="bTenviar" value="Assinar" />
+      </fieldset>
     </form>
-    
-</body>
-
-
+  </body>
 </html>
